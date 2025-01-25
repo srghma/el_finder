@@ -99,7 +99,7 @@ module ElFinder
     end # of to_s
     alias_method :to_str, :to_s
 
-    # 
+    #
     def child_directories(with_directory=true)
       realpath.children(with_directory).select{ |child| child.directory? }.map{|e| self.class.new(@root, e)}
     end

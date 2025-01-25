@@ -20,9 +20,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency('image_size', '>= 1.0.0')
-  s.add_development_dependency('yard', '~> 0.8.1')
-  s.add_development_dependency('redcarpet', '~> 2.1.1')
+  s.add_dependency('fastimage', '~> 1.8')
+  s.add_development_dependency('yard', '~> 0.8')
+  s.add_development_dependency('redcarpet', '~> 2.1')
   s.requirements << 'ImageMagick'
-
 end
